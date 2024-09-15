@@ -1,0 +1,16 @@
+section .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    background: linear-gradient( rgba(7, 8, 8, 0.395), rgba(27, 29, 31, 0.655));
+    border: 0;
+    border-radius: 5vh;
+    padding-block: 5vh;
+    margin-block: 5vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+#p-content {
+    font-size: 5vh;
+}

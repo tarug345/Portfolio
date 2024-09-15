@@ -1,0 +1,44 @@
+@import url(./header.css);
+@import url(./infos.css);
+
+html {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(rgba(0,0,0,0.9), rgba(0, 0, 0,0.9));
+    background-image:  
+    linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
+    url(background.png);
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    height: 100%;
+    width: 100%;
+}
+body {
+    max-width: 100%;
+}
+header {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens dentro do header */
+    align-items: center; /* Alinha verticalmente */ 
+    background: linear-gradient( rgba(37, 37, 37, 0.9), rgba(31, 31, 31, 0.995));
+    border: 0;
+    border-radius: 45vh;
+    width: 100%;
+}
+button {
+    border: 0;
+    border-radius: 50vh;
+    width: 25vh;
+    height: 5vh;
+    background: linear-gradient( rgb(0, 0, 0), rgb(58, 58, 58));
+    font-size: 100%;
+    color: aliceblue;
+    font-family:monospace;
+}
+button:hover {
+    background: linear-gradient(rgb(82, 82, 82), rgb(151, 151, 151));
+}
+p {
+    color: aliceblue;
+}
