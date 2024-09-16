@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(./infos.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 html {
     margin: 0;
@@ -39,6 +40,13 @@ button {
 button:hover {
     background: linear-gradient(rgb(82, 82, 82), rgb(151, 151, 151));
 }
-p {
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: aliceblue;
+}
+p {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: aliceblue;
 }
