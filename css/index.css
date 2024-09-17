@@ -7,7 +7,7 @@ html {
     padding: 0;
     background: radial-gradient(rgba(0,0,0,0.9), rgba(0, 0, 0,0.9));
     background-image:  
-    linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
+    linear-gradient(rgba(251, 216, 255, 0.9), rgba(204, 113, 216, 0.9)),
     url(background.png);
     background-size: cover;
     background-position: center; /* Centraliza a imagem */
@@ -36,9 +36,12 @@ button {
     font-size: 100%;
     color: aliceblue;
     font-family:monospace;
+
+    transition: all 0.2s ease-in-out;
 }
 button:hover {
     background: linear-gradient(rgb(82, 82, 82), rgb(151, 151, 151));
+    width: 24vh;
 }
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;

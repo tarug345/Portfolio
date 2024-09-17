@@ -6,11 +6,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 #logo-img {
     height: 10vh;
     max-width: 100%;
     margin-left: 5vh;
+    transition: transform 0.5s ease-in-out;
+}
+#logo-img:hover {
+    transform: rotate(360deg);
 }
 #txt-logo {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -21,4 +26,9 @@
     display: flex;
     gap: 10px;
     margin-right: 5vh;
+}
+#h-btn {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
 }
