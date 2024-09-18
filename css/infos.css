@@ -17,7 +17,30 @@ section .content {
 #content-video {
     margin-left: 10%;
     border: 0;
-    border-radius: 10vh;
+    border-radius: 4.5vh;
+    box-shadow: 10px 5px 5px rgba(56, 56, 56, 0.575);
 }
-
-
+@media (max-width: 450px) {
+    section .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+        background: linear-gradient( rgba(7, 8, 8, 0.395), rgba(27, 29, 31, 0.655));
+        border: 0;
+        border-radius: 5vh;
+        padding-block: 5%;
+        margin-block: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #p-content {
+        font-size: 5vh;
+    }
+    #content-video {
+        margin-left: 10%;
+        border: 0;
+        border-radius: 4.5vh;
+        box-shadow: 10px 5px 5px rgba(56, 56, 56, 0.575);
+}
+}
