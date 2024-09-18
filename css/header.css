@@ -32,3 +32,43 @@
     display: flex;
     align-items: center;
 }
+@media (max-width: 480) {
+
+    .div-group {
+        display: flex;
+        align-items: flex-start;
+        width: 10%;
+        height: auto;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        height: auto;
+    }
+    #logo-img {
+        height: 10vh;
+        max-width: 100%;
+        margin-left: 5vh;
+        transition: transform 0.5s ease-in-out;
+    }
+    #logo-img:hover {
+        transform: rotate(360deg);
+    }
+    #txt-logo {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: aliceblue;
+        align-items: flex-start;
+    }
+    .header-btn {
+        display: flex;
+        gap: 10px;
+        margin-right: 5vh;
+    }
+    #h-btn {
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+}
+}

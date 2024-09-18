@@ -11,12 +11,6 @@ section .content {
     margin-left: 5vh;
     margin-right: 5vh;
 }
-#img-content {
-   
-}
-#img-content:hover {
-
-}
 #p-content {
     font-size: 5vh;
 }
