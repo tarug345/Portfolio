@@ -19,7 +19,7 @@
 }
 #txt-logo {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: aliceblue;
+    color: #829F8B;
     align-items: flex-start;
 }
 .header-btn {
@@ -32,12 +32,12 @@
     justify-content: space-evenly;
     display: flex;
     align-items: center;
-    background: linear-gradient( rgb(255, 155, 4), rgb(255, 102, 0));
+    background: linear-gradient( rgb(115,39,59), rgb(204,143,136));
     width: 5vh;
     height: 5vh; 
 }
 #h-btn:hover {
-    background: linear-gradient( rgb(238, 164, 46), rgb(255, 170, 113));
+    background: linear-gradient( rgb(80, 38, 49), rgb(100, 70, 67));
     width: 6vh;
     height: 6vh;
 }
