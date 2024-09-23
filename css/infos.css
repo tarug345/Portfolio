@@ -59,6 +59,13 @@
 #p-section-two {
     margin-left: 4vw;
 }
+#txt-section-three {
+    font-size: 5vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #D9C6A2;
+}
 .content {
     background: linear-gradient( rgba(115,39,59), rgba(204,143,136));
     display: flex;
@@ -73,6 +80,7 @@
 #h2-content {
     font-size: 5vh;
     margin-right: 2vw;
+    margin-left: 2vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #D9C6A2;
 }
