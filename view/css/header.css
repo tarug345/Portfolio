@@ -1,3 +1,14 @@
+header {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens dentro do header */
+    align-items: center; /* Alinha verticalmente */ 
+    background: rgba(255, 255, 255, 0);
+    border: 1px;
+    
+    width: 100vw;
+    height: auto;
+    border-bottom: solid 1px #587370;
+}
 .div-group {
     display: flex;
     align-items: flex-start;
@@ -29,18 +40,62 @@
 }
 
 #h-btn {
+    border: 0;
+    border-radius: 50vh;
+    width: 25vh;
+    height: 5vh;
+    font-size: 100%;
+    color: aliceblue;
     justify-content: space-evenly;
     display: flex;
     align-items: center;
     background: linear-gradient( rgb(115,39,59), rgb(204,143,136));
     width: 5vh;
     height: 5vh; 
+    transition: all 0.2s ease-in-out;
 }
 #h-btn:hover {
     background: linear-gradient( rgb(80, 38, 49), rgb(100, 70, 67));
     width: 6vh;
     height: 6vh;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 480) {
 
     .div-group {

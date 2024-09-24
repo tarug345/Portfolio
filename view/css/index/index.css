@@ -1,6 +1,6 @@
-@import url(./header.css);
+@import url(./../header.css);
 @import url(./infos.css);
-@import url(./footer.css);
+@import url(./../footer.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
@@ -12,17 +12,6 @@ body {
     overflow: hidden; /*tira a barra de rolagem*/
 }
 
-header {
-    display: flex;
-    justify-content: space-between; /* Espaça os itens dentro do header */
-    align-items: center; /* Alinha verticalmente */ 
-    background: rgba(255, 255, 255, 0);
-    border: 1px;
-    
-    width: 100vw;
-    height: auto;
-    border-bottom: solid 1px #587370;
-}
 button {
     border: 0;
     border-radius: 50vh;

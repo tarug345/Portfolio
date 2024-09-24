@@ -1,0 +1,66 @@
+#banners {
+    margin-top: 5vh;
+    width: 400vw;
+    height: 35vh;
+    display: inline;
+
+    left: 0;
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    transition: all 0.3s ease-in-out;
+}
+.banner {
+    width: 90vw;
+    height: 35vh;
+    margin: 0 5vw;
+    background-color: red;
+    border: 0;
+    border-radius: 2vw;
+
+}
+#id-banner1 {
+    background-image: url(https://images3.memedroid.com/images/UPLOADED843/614b98e524638.jpeg);
+    background-size:90vw 35vh; /*deixei p tamanho da imagem proporcional à div*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#id-banner2 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-n3kA6Y56iluPPPQdSwYMxqFkKqUvK1mEcg&s);
+    background-size:90vw 35vh; /*deixei p tamanho da imagem proporcional à div*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#id-banner3 {
+    background-image: url(https://preview.redd.it/whats-the-best-travis-meme-v0-3hknx8wx4xva1.jpeg?width=236&format=pjpg&auto=webp&s=754c1dbb467219241c1bc7d04fec143234ca30b5);
+    background-size:90vw 35vh; /*deixei p tamanho da imagem proporcional à div*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#id-banner4 {
+    background-image: url(https://i.imgflip.com/6to782.png?a479232);
+    background-size:90vw 35vh; /*deixei p tamanho da imagem proporcional à div*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#btns-banners {
+    width: 10vw;
+    height: 5vh;
+
+    position: absolute;
+    left: 45vw;
+    top: 45vh;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn-banner {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+}
