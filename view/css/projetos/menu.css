@@ -1,0 +1,54 @@
+#div-father {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#icon-menu {
+    width: 1vw;
+    height: 7vh;
+    position: absolute;
+    left: 7vw;
+    top: 12%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#icon-menu div {
+    width: 5vw;
+    height: 2vh;
+    background-color:aliceblue ;
+
+    border: none;
+    border-radius: 5vw;
+    transition: all 0.3s ease-in-out;
+}
+/* #icon-menu:hover #div1 {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 3vh;
+}
+#icon-menu:hover #div2{
+    display: none;
+}
+#icon-menu:hover #div3{
+    transform: rotate(-45deg);
+    top: 3vh;
+    position: absolute; 
+}  */
+
+/* daqui para baixo é o menu*/
+
+#menu {
+    width: 100vw;
+    height: 20vh;
+
+    position: absolute;
+    top: 10vh;
+    left: 0vw;
+    z-index: -1;
+
+    background-color: yellowgreen;
+    transition: all 0.3s ease-in-out;
+}
