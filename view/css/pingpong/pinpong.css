@@ -1,0 +1,30 @@
+@import url(./../header.css);
+#body {
+    width: 100vw;
+    height: 100vh;
+}
+div {
+    position: absolute;
+}
+#pingpong, #pingpong2 {
+    width: 3vw;
+    height: 26vh;
+}
+#bola {
+    width: 2vw;
+    height: 2vh;
+    background-color: rgb(119, 0, 255);
+    left: 40vw;
+    top: 48vh;
+}
+#pingpong1 {
+    background-color:rgb(20, 210, 224);
+    left: 90vw;
+    top: 50vh;
+}
+#pingpong2 {
+    left: 15vw;
+    background-color: blueviolet;
+    left: 90vw;
+    top: 37vh;
+}

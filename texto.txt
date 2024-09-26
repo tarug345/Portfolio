@@ -1,0 +1,49 @@
+condicionais
+regras 
+== igual
+< menor Q
+> maior Q
+! não
+&& e
+|| ou
+
+if (5 ==7){
+    ........
+        ...
+} 
+isso é falso
+
+if (5 ==5){
+    ........
+        ...
+} 
+verdadeiro
+
+if (10>8){
+    ........
+        ...
+} 
+verdadeiro
+
+========================================
+
+if (nota >7){
+    aprovado
+} else if (nota <5){
+    reprovado
+} else {
+    recuperação
+}
+
+if (!nota >7) {
+    reprovado
+} 
+((nota>5)||(nota==5)) a primeira é falsa, já a segunda, não.
+
+if (nota>7){
+    sprovado
+} else if (nota<5) {
+    reprovado
+} else if ((nota>5)&&(nota<7)) {
+    recuperação
+}
