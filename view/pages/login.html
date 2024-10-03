@@ -20,6 +20,9 @@
         </nav>
     </header>
     <div class="wrapper"> 
+        <span class="icon-close">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
         <div class="form-box login">
             <h2>Login</h2>
             <form action="#">
@@ -41,6 +44,41 @@
                         <input type="checkbox">
                         Remember me 
                         <a href="#">Forgot Password?</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn">
+                Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?
+                        <a href="#" class="register-link">
+                            Register
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register"></div>
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="text" required>
+                    <label>User name</label>
+                </div>
+                <div class="input-box"></div>
+                    <span class="icon"><i class="fa-solid fa-lock"></i>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">
+                        Remember me 
+                        
                     </label>
                 </div>
                 <button type="submit" class="btn">
