@@ -9,9 +9,9 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    background: url('https://wallpapercat.com/w/full/a/c/d/210638-3840x2160-desktop-4k-travis-scott-background-photo.jpg') no-repeat;
+    /*background: url('https://wallpapercat.com/w/full/a/c/d/210638-3840x2160-desktop-4k-travis-scott-background-photo.jpg') no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
 }
 
 .wrapper {
