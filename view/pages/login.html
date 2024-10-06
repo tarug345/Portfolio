@@ -1,56 +1,58 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declara que o documento é HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma do documento como português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./../css/login/login.css">
-    <script src="./../../controller/login/login.js"></script>
-    <script src="https://kit.fontawesome.com/98914b98a5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+    <title>Login</title> <!-- Define o título da página que aparecerá na aba do navegador -->
+    <link rel="stylesheet" href="ز/../css/login/login.css"> <!-- Link para o arquivo CSS para estilização -->
+    <script src="./../../controller/login/login.js"></script> <!-- Link para o arquivo JavaScript que controla a lógica do login -->
+    <script type="module" src="https://kit.fontawesome.com/98914b98a5.js" crossorigin="anonymous" defer></script> <!-- Link para o Font Awesome para ícones, carregado de forma assíncrona -->
 </head>
 <body>
     <header>
-        <h2 class="logo">Logo</h2>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Serviços</a>
-            <a href="#">Contato</a>
-            <button class="btnlogin-popup">Login</button>
+        <h2 class="logo">Logo</h2> <!-- Título do cabeçalho que serve como logo -->
+        <nav class="navigation"> <!-- Navegação principal da página -->
+            <a href="#">Home</a> <!-- Link para a página inicial -->
+            <a href="#">Sobre</a> <!-- Link para a seção Sobre -->
+            <a href="#">Serviços</a> <!-- Link para a seção Serviços -->
+            <a href="#">Contato</a> <!-- Link para a seção Contato -->
+            <button class="btnlogin-popup">Login</button> <!-- Botão que, quando clicado, pode abrir o formulário de login -->
         </nav>
     </header>
-    <div class="wrapper"> 
-        <span class="icon-close">
-            <i class="fa-solid fa-xmark"></i>
+    <div class="wrapper"> <!-- Contêiner para os formulários de login e registro -->
+        <span class="icon-close"> <!-- Ícone de fechamento do formulário -->
+            <i class="fa-solid fa-xmark"></i> <!-- Ícone de "X" do Font Awesome -->
         </span>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon">
-                        <i class="fa-regular fa-envelope"></i>
+        <div class="form-box login"> <!-- Formulário de login -->
+            <h2>Login</h2> <!-- Título do formulário de login -->
+            <form action="#"> <!-- Início do formulário; o atributo action deve ser modificado para o endpoint correto -->
+                <div class="input-box"> <!-- Contêiner para o campo de entrada do email -->
+                    <span class="icon"> <!-- Ícone do campo de entrada -->
+                        <i class="fa-regular fa-envelope"></i> <!-- Ícone de envelope do Font Awesome -->
                     </span>
-                    <input type="email" required>
-                    <label>Email</label>
+                    <input type="email/text" required> <!-- Campo de entrada para email; o type deve ser "email" ou "text" -->
+                    <label>Email</label> <!-- Rótulo para o campo de entrada -->
                 </div>
-                <div class="input-box"></div>
-                    <span class="icon"><i class="fa-solid fa-lock"></i>
+                <div class="input-box"> <!-- Contêiner para o campo de entrada da senha -->
+                    <span class="icon"> <!-- Ícone do campo de entrada -->
+                        <i class="fa-solid fa-lock"></i> <!-- Ícone de cadeado do Font Awesome -->
                     </span>
-                    <input type="password" required>
-                    <label>Password</label>
+                    <input type="password" required> <!-- Campo de entrada para senha -->
+                    <label>Password</label> <!-- Rótulo para o campo de entrada -->
                 </div>
-                <div class="remember-forgot">
+                <div class="remember-forgot"> <!-- Contêiner para opções de lembrar senha e link para recuperação -->
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox"> <!-- Caixa de seleção para "Lembrar-me" -->
                         Remember me 
-                        <a href="#">Forgot Password?</a>
+                        <a href="#">Forgot Password?</a> <!-- Link para recuperação de senha -->
                     </label>
                 </div>
-                <button type="submit" class="btn">
-                Login</button>
-                <div class="login-register">
-                    <p>Don't have an account?
-                        <a href="#" class="register-link">
+                <button type="submit" class="btn"> <!-- Botão de envio do formulário -->
+                    Login
+                </button>
+                <div class="login-register"> <!-- Contêiner para link de registro -->
+                    <p>Don't have an account? <!-- Texto informando que não possui conta -->
+                        <a href="#" class="register-link"> <!-- Link para a página de registro -->
                             Register
                         </a>
                     </p>
@@ -58,32 +60,34 @@
             </form>
         </div>
 
-        <div class="form-box register">
-            <h2>Registration</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon">
-                        <i class="fa-solid fa-user"></i>
+        <div class="form-box register"> <!-- Formulário de registro -->
+            <h2>Registration</h2> <!-- Título do formulário de registro -->
+            <form action="#"> <!-- Início do formulário de registro; o atributo action deve ser modificado para o endpoint correto -->
+                <div class="input-box"> <!-- Contêiner para o campo de entrada do nome de usuário -->
+                    <span class="icon"> <!-- Ícone do campo de entrada -->
+                        <i class="fa-solid fa-user"></i> <!-- Ícone de usuário do Font Awesome -->
                     </span>
-                    <input type="text" required>
-                    <label>User name</label>
+                    <input type="text" required> <!-- Campo de entrada para nome de usuário -->
+                    <label>User name</label> <!-- Rótulo para o campo de entrada -->
                 </div>
-                <div class="input-box">
-                    <span class="icon"><i class="fa-solid fa-lock"></i>
+                <div class="input-box"> <!-- Contêiner para o campo de entrada da senha -->
+                    <span class="icon"> <!-- Ícone do campo de entrada -->
+                        <i class="fa-solid fa-lock"></i> <!-- Ícone de cadeado do Font Awesome -->
                     </span>
-                    <input type="password" required>
-                    <label>Password</label>
+                    <input type="password" required> <!-- Campo de entrada para senha -->
+                    <label>Password</label> <!-- Rótulo para o campo de entrada -->
                 </div>
-                <div class="remember-forgot">
+                <div class="remember-forgot"> <!-- Contêiner para opções de lembrar senha -->
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox"> <!-- Caixa de seleção para "Lembrar-me" -->
                     </label>
                 </div>
-                <button type="submit" class="btn">
-                Register</button>
-                <div class="login-register">
-                    <p>Already have an account?
-                        <a href="#" class="login-link">
+                <button type="submit" class="btn"> <!-- Botão de envio do formulário -->
+                    Register
+                </button>
+                <div class="login-register"> <!-- Contêiner para link de login -->
+                    <p>Already have an account? <!-- Texto informando que já possui conta -->
+                        <a href="#" class="login-link"> <!-- Link para a página de login -->
                             Login
                         </a>
                     </p>

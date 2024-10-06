@@ -1,166 +1,190 @@
-@import url(./header-login.css);
+@import url(./header-login.css); /* Importa o arquivo CSS do cabeçalho de login */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Define o modelo de caixa para incluir bordas e preenchimentos na largura e altura */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define a fonte padrão da página */
 }
+
 body {
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    /*background: url('https://wallpapercat.com/w/full/a/c/d/210638-3840x2160-desktop-4k-travis-scott-background-photo.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;*/
+    display: flex; /* Usa Flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente os itens dentro do corpo */
+    min-height: 100vh; /* Define a altura mínima do corpo para 100% da altura da janela de visualização */
+    /*background: url('https://wallpapercat.com/w/full/a/c/d/210638-3840x2160-desktop-4k-travis-scott-background-photo.jpg') no-repeat; /* Define uma imagem de fundo (comentada) */
+    /*background-size: cover; /* Faz a imagem de fundo cobrir toda a área do corpo (comentada) */
+    /*background-position: center; /* Centraliza a imagem de fundo (comentada) */
 }
 
 .wrapper {
-    position: relative;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 2px solid rgba(255,255,255, .5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: scale(0);
-    transition: transform .5s ease, height .2s ease;
+    position: relative; /* Define a posição do wrapper como relativa para posicionar elementos filhos */
+    width: 400px; /* Define a largura do wrapper */
+    height: 440px; /* Define a altura do wrapper */
+    background: transparent; /* Torna o fundo do wrapper transparente */
+    border: 2px solid rgba(255,255,255, .5); /* Define uma borda semi-transparente branca */
+    border-radius: 20px; /* Arredonda os cantos da borda */
+    backdrop-filter: blur(20px); /* Aplica um desfoque ao fundo atrás do wrapper */
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5); /* Adiciona uma sombra ao redor do wrapper */
+    display: flex; /* Usa Flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente os itens dentro do wrapper */
+    align-items: center; /* Centraliza verticalmente os itens dentro do wrapper */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do wrapper */
+    transform: scale(0); /* Inicialmente escala o wrapper para 0 (invisível) */
+    transition: transform .5s ease, height .2s ease; /* Define transições suaves para transformação e altura */
 }
-.wrapper.active-popup{
-    transform: scale(1);
+
+.wrapper.active-popup {
+    transform: scale(1); /* Quando a classe active-popup é adicionada, o wrapper se torna visível */
 }
-.wrapper.active{
-    height: 520px;
+
+.wrapper.active {
+    height: 520px; /* Altera a altura do wrapper quando a classe active é adicionada */
 }
-.wrapper .form-box{
-    width: 100%;
-    padding: 40px;
+
+.wrapper .form-box {
+    width: 100%; /* Define a largura da caixa de formulário para 100% do wrapper */
+    padding: 40px; /* Adiciona preenchimento ao redor do conteúdo da caixa de formulário */
 }
-.wrapper .form-box.login{
-    transition: transform .18s ease;
-    transform: translateX(0);
+
+.wrapper .form-box.login {
+    transition: transform .18s ease; /* Define uma transição suave para a transformação da caixa de login */
+    transform: translateX(0); /* Inicialmente não desloca a caixa de login */
 }
-.wrapper.active .form-box.login{
-    transition: none;
-    transform: translateX(400px);
+
+.wrapper.active .form-box.login {
+    transition: none; /* Remove a transição quando a classe active é adicionada */
+    transform: translateX(400px); /* Desloca a caixa de login para a direita quando active é adicionado */
 }
-.wrapper .form-box-register{
-    position: absolute;
-    transition: none;
-    transform: translateX(400px);
+
+.wrapper .form-box-register {
+    position: absolute; /* Define a posição da caixa de registro como absoluta */
+    transition: none; /* Remove a transição inicialmente */
+    transform: translateX(400px); /* Desloca a caixa de registro para fora da tela inicialmente */
 }
-.wrapper.active .form-box-register{
-    transition: transform .18s ease;
-    transform: translateX(0);
+
+.wrapper.active .form-box-register {
+    transition: transform .18s ease; /* Define uma transição suave para a transformação da caixa de registro */
+    transform: translateX(0); /* Move a caixa de registro para a posição original quando active é adicionado */
 }
+
 .wrapper .icon-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45px;
-    height: 45px;
-    background: #162938;
-    font-size: 2em;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 20px;
-    cursor: pointer;
-    z-index: 1;
+    position: absolute; /* Define a posição do ícone de fechar como absoluta */
+    top: 0; /* Posiciona o ícone no topo do wrapper */
+    right: 0; /* Posiciona o ícone à direita do wrapper */
+    width: 45px; /* Define a largura do ícone de fechar */
+    height: 45px; /* Define a altura do ícone de fechar */
+    background: #162938; /* Define a cor de fundo do ícone de fechar */
+    font-size: 2em; /* Define o tamanho da fonte do ícone */
+    color: aliceblue; /* Define a cor do ícone como azul claro */
+    display: flex; /* Usa Flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do ícone */
+    align-items: center; /* Centraliza verticalmente o conteúdo do ícone */
+    border-bottom-left-radius: 20px; /* Arredonda o canto inferior esquerdo do ícone */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    z-index: 1; /* Define a ordem de empilhamento para que o ícone esteja acima de outros elementos */
 }
+
 .form-box h2 {
-    font-size: 2em;
-    color: #162938;
-    text-align: center;
+    font-size: 2em; /* Define o tamanho da fonte do cabeçalho */
+    color: #162938; /* Define a cor do cabeçalho */
+    text-align: center; /* Centraliza o texto do cabeçalho */
 }
+
 .input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border-radius: 2px solid #162938;
-    margin: 30px 0;
+    position: relative; /* Define a posição da caixa de entrada como relativa */
+    width: 100%; /* Define a largura da caixa de entrada para 100% do contêiner pai */
+    height: 50px; /* Define a altura da caixa de entrada */
+    border-radius: 2px solid #162938; /* Define a borda da caixa de entrada */
+    margin: 30px 0; /* Define a margem superior e inferior da caixa de entrada */
 }
+
 .input-box label {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%); 
-    font-size: 1em;
-    color: #162938;
-    font-weight: 500;
-    pointer-events: none;
-    transition: .5;
+    position: absolute; /* Define a posição do rótulo como absoluta */
+    top: 50%; /* Posiciona o rótulo verticalmente ao centro da caixa de entrada */
+    left: 5px; /* Posiciona o rótulo 5px da borda esquerda */
+    transform: translateY(-50%); /* Centraliza verticalmente o rótulo */
+    font-size: 1em; /* Define o tamanho da fonte do rótulo */
+    color: #162938; /* Define a cor do rótulo */
+    font-weight: 500; /* Define a espessura da fonte do rótulo */
+    pointer-events: none; /* Desativa eventos de ponteiro para que o rótulo não possa ser clicado */
+    transition: .5; /* Define uma transição suave (sem valor específico) */
 }
+
 .input-box input:focus~label,
-.input-box input:valid~label{
-    top: -5px;
+.input-box input:valid~label {
+    top: -5px; /* Move o rótulo para cima quando o campo de entrada está focado ou válido */
 }
+
 .input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;                 
-    font-size: 1em;
-    color: #162938;
-    font-weight: 600;
-    padding: 0 35px 0 5px;         
+    width: 100%; /* Define a largura da entrada para 100% do contêiner pai */
+    height: 100%; /* Define a altura da entrada para 100% do contêiner pai */
+    background: transparent; /* Torna o fundo da entrada transparente */
+    border: none; /* Remove a borda da entrada */
+    outline: none; /* Remove o contorno padrão da entrada */
+    font-size: 1em; /* Define o tamanho da fonte da entrada */
+    color: #162938; /* Define a cor do texto da entrada */
+    font-weight: 600; /* Define a espessura da fonte da entrada */
+    padding: 0 35px 0 5px; /* Adiciona preenchimento ao redor do texto da entrada */
 }
+
 .input-box .icon {
-    position: absolute;
-    right: 8px;
-    font-size: 1.2em;
-    color: #162938;
-    line-height: 57px;
+    position: absolute; /* Define a posição do ícone como absoluta */
+    right: 8px; /* Posiciona o ícone 8px da borda direita */
+    font-size: 1.2em; /* Define o tamanho da fonte do ícone */
+    color: #162938; /* Define a cor do ícone */
+    line-height: 57px; /* Define a altura da linha do ícone para centralização */
 }
+
 .remember-forgot {
-    font-size: .9em;
-    color: #162938;
-    font-weight: 500;
-    margin: -15px 0 15px;
-    display: flex;
-    justify-content: space-between;
+    font-size: .9em; /* Define o tamanho da fonte para a seção de lembrar/esquecer */
+    color: #162938; /* Define a cor do texto */
+    font-weight: 500; /* Define a espessura da fonte */
+    margin: -15px 0 15px; /* Define margens superior, inferior e lateral */
+    display: flex; /* Usa Flexbox para layout */
+    justify-content: space-between; /* Espalha os itens em ambos os lados */
 }
-.remember-forgot label input{
-    accent-color: #162938;
-    margin-right: 3px;
+
+.remember-forgot label input {
+    accent-color: #162938; /* Define a cor do acento da entrada (se disponível) */
+    margin-right: 3px; /* Adiciona margem à direita da caixa de seleção */
 }
+
 .remember-forgot a {
-    color: #162938;
-    text-decoration: none;
+    color: #162938; /* Define a cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
 }
+
 .remember-forgot a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
 }
+
 .btn {
-    width: 100%;
-    height: 45px;
-    background: #162938;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-    color: aliceblue;
-    font-weight: 500;
+    width: 100%; /* Define a largura do botão para 100% do contêiner pai */
+    height: 45px; /* Define a altura do botão */
+    background: #162938; /* Define a cor de fundo do botão */
+    border: none; /* Remove a borda do botão */
+    outline: none; /* Remove o contorno padrão do botão */
+    border-radius: 6px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    font-size: 1em; /* Define o tamanho da fonte do botão */
+    color: aliceblue; /* Define a cor do texto do botão */
+    font-weight: 500; /* Define a espessura da fonte do botão */
 }
+
 .login-register {
-    font-size: .9em;
-    color: #162938;
-    text-align: center;
-    font-weight: 500;
-    margin: 25px 0 10px;
+    font-size: .9em; /* Define o tamanho da fonte para a seção de login/registro */
+    color: #162938; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    font-weight: 500; /* Define a espessura da fonte */
+    margin: 25px 0 10px; /* Define margens superior, inferior e lateral */
 }
+
 .login-register p a {
-    color: #162938;
-    text-decoration: none;
-    font-weight: 600;
+    color: #162938; /* Define a cor do link na seção de login/registro */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: 600; /* Define a espessura da fonte do link */
 }
+
 .login-register p a:hover {
-     text-decoration: underline;
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
 }
