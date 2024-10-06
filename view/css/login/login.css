@@ -11,10 +11,10 @@ body {
     display: flex; /* Usa Flexbox para layout */
     justify-content: center; /* Centraliza horizontalmente os itens dentro do corpo */
     min-height: 100vh; /* Define a altura mínima do corpo para 100% da altura da janela de visualização */
-    /*background: url('https://wallpapercat.com/w/full/a/c/d/210638-3840x2160-desktop-4k-travis-scott-background-photo.jpg') no-repeat; /* Define uma imagem de fundo (comentada) */
-    /*background-size: cover; /* Faz a imagem de fundo cobrir toda a área do corpo (comentada) */
-    /*background-position: center; /* Centraliza a imagem de fundo (comentada) */
-}
+    background: url('https://wallpapercat.com/w/full/a/c/d/210638-3840x2160-desktop-4k-travis-scott-background-photo.jpg') no-repeat;/*  /* Define uma imagem de fundo (comentada) */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área do corpo (comentada) */
+    background-position: center; /* Centraliza a imagem de fundo (comentada) */
+} 
 
 .wrapper {
     position: relative; /* Define a posição do wrapper como relativa para posicionar elementos filhos */
