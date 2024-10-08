@@ -9,12 +9,26 @@
 
 body {
     display: flex; /* Usa Flexbox para layout */
+    align-items:center ;
     justify-content: center; /* Centraliza horizontalmente os itens dentro do corpo */
     min-height: 100vh; /* Define a altura mínima do corpo para 100% da altura da janela de visualização */
     background: url('https://wallpapercat.com/w/full/a/c/d/210638-3840x2160-desktop-4k-travis-scott-background-photo.jpg') no-repeat;/*  /* Define uma imagem de fundo (comentada) */
+
     background-size: cover; /* Faz a imagem de fundo cobrir toda a área do corpo (comentada) */
     background-position: center; /* Centraliza a imagem de fundo (comentada) */
+    width: 100vw;
+    height: 100vh;
 } 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adiciona uma máscara preta com 50% de opacidade */
+    z-index: 1; /* Posiciona a máscara abaixo do conteúdo principal */
+}
 
 .wrapper {
     position: relative; /* Define a posição do wrapper como relativa para posicionar elementos filhos */
@@ -29,8 +43,9 @@ body {
     justify-content: center; /* Centraliza horizontalmente os itens dentro do wrapper */
     align-items: center; /* Centraliza verticalmente os itens dentro do wrapper */
     overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do wrapper */
-    transform: scale(0); /* Inicialmente escala o wrapper para 0 (invisível) */
+    transform: scale(1); /* Inicialmente escala o wrapper para 0 (invisível) */
     transition: transform .5s ease, height .2s ease; /* Define transições suaves para transformação e altura */
+    z-index: 2;
 }
 
 .wrapper.active-popup {
@@ -86,7 +101,7 @@ body {
 
 .form-box h2 {
     font-size: 2em; /* Define o tamanho da fonte do cabeçalho */
-    color: #162938; /* Define a cor do cabeçalho */
+    color: #aedcff; /* Define a cor do cabeçalho */
     text-align: center; /* Centraliza o texto do cabeçalho */
 }
 
@@ -104,7 +119,7 @@ body {
     left: 5px; /* Posiciona o rótulo 5px da borda esquerda */
     transform: translateY(-50%); /* Centraliza verticalmente o rótulo */
     font-size: 1em; /* Define o tamanho da fonte do rótulo */
-    color: #162938; /* Define a cor do rótulo */
+    color: #aedcff; /* Define a cor do rótulo */
     font-weight: 500; /* Define a espessura da fonte do rótulo */
     pointer-events: none; /* Desativa eventos de ponteiro para que o rótulo não possa ser clicado */
     transition: .5; /* Define uma transição suave (sem valor específico) */
@@ -122,7 +137,7 @@ body {
     border: none; /* Remove a borda da entrada */
     outline: none; /* Remove o contorno padrão da entrada */
     font-size: 1em; /* Define o tamanho da fonte da entrada */
-    color: #162938; /* Define a cor do texto da entrada */
+    color: #f5f5f5; /* Define a cor do texto da entrada */
     font-weight: 600; /* Define a espessura da fonte da entrada */
     padding: 0 35px 0 5px; /* Adiciona preenchimento ao redor do texto da entrada */
 }
@@ -131,13 +146,13 @@ body {
     position: absolute; /* Define a posição do ícone como absoluta */
     right: 8px; /* Posiciona o ícone 8px da borda direita */
     font-size: 1.2em; /* Define o tamanho da fonte do ícone */
-    color: #162938; /* Define a cor do ícone */
+    color: #aedcff; /* Define a cor do ícone */
     line-height: 57px; /* Define a altura da linha do ícone para centralização */
 }
 
 .remember-forgot {
     font-size: .9em; /* Define o tamanho da fonte para a seção de lembrar/esquecer */
-    color: #162938; /* Define a cor do texto */
+    color: #aedcff; /* Define a cor do texto */
     font-weight: 500; /* Define a espessura da fonte */
     margin: -15px 0 15px; /* Define margens superior, inferior e lateral */
     display: flex; /* Usa Flexbox para layout */
@@ -150,7 +165,7 @@ body {
 }
 
 .remember-forgot a {
-    color: #162938; /* Define a cor do link */
+    color: #71c2ff; /* Define a cor do link */
     text-decoration: none; /* Remove o sublinhado do link */
 }
 
@@ -173,14 +188,14 @@ body {
 
 .login-register {
     font-size: .9em; /* Define o tamanho da fonte para a seção de login/registro */
-    color: #162938; /* Define a cor do texto */
+    color: #aedcff; /* Define a cor do texto */
     text-align: center; /* Centraliza o texto */
     font-weight: 500; /* Define a espessura da fonte */
     margin: 25px 0 10px; /* Define margens superior, inferior e lateral */
 }
 
 .login-register p a {
-    color: #162938; /* Define a cor do link na seção de login/registro */
+    color: #71c2ff; /* Define a cor do link na seção de login/registro */
     text-decoration: none; /* Remove o sublinhado do link */
     font-weight: 600; /* Define a espessura da fonte do link */
 }
