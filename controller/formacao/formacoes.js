@@ -1,4 +1,4 @@
-import { criarCartoes } from "../formacao/cartoes.js"
+import { criarCartoes } from "./cartoes.js"
 
 document.addEventListener("DOMContentLoaded", () => {
     criarCartoes();

@@ -2,11 +2,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* width: 100vw; */
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f2f5; /* Cor de fundo leve */
+    /* overflow: hidden; */
 }
+
 
 #cartoes {
     display: grid;
@@ -31,12 +34,15 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.btn-apagar{
+    margin-left: 0;
+}
 .cartao:hover {
     transform: translateY(-0.3vh);
-    box-shadow: 0 1vh 6vh rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1vh 5.7vh rgba(0, 0, 0, 0.2);
 }
 
 h1, h3, p {
     margin: 0;
 }
+
