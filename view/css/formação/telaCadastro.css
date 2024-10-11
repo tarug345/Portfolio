@@ -1,0 +1,51 @@
+#telaCadastro {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient( rgba(55, 198, 255, 0.247), rgba(0, 201, 252, 0.267));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inputs-cad {
+    width: 20vw;
+    height: 30vh;
+    background: linear-gradient( rgba(0, 140, 255, 0.333), rgb(114, 192, 255,0.333));
+    border-radius: 2vw 4vw 2vw 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 3vh; */
+    padding: 5vh 0 ;
+}
+.input-text-tela-cad {
+    border: 0;
+    border-radius: 0.33vw;
+    /* background-color: black; */
+}
+#buttons-telaCad {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3vh;
+    width: 13vw;
+}
+.button-telaCad{
+    border: 0;
+    border-radius: 0.7vw;
+    width: 10vh;
+    height: 3.6vh;
+    background: linear-gradient( rgb(0, 140, 255), rgb(114, 192, 255));
+    font-size: 100%;
+    color: aliceblue;
+    font-family:monospace;
+    text-align: center;
+    align-content: center;
+}
+.button-telaCad:hover {
+    background: linear-gradient(rgb(82, 82, 82), rgb(151, 151, 151));
+    /* width: 9.5vh; */
+    transform: translateY(-0.2vh);
+}

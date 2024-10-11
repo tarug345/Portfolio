@@ -38,24 +38,14 @@
 //     }
     
 // ];
-
-export async function carregarCartoes() {
-    try{
-        const response = await fetch('http://localhost:3000/cartoes'); // Faz uma requisição HTTP para o servidor para obter os cartões
-        const data = await response.json(); // Converte a resposta em um objeto JavaScript
-        const cartoes = data.cartoes; // Armazena os cartões na variável cartoes
-        return cartoes;
-    }catch(e){
-        console.error('Erro ao carregar os cartões:', e);
-    }
-}
-
+import { buscarCartoes } from "./../services/cartoesServices.js";
+import { excluirCartao } from "./../services/cartoesServices.js";
 // Função para criar os cartões
 export async function criarCartoes() {
     // Seleciona a seção onde os cartões serão inseridos
     let sectionCartoes = document.getElementById('cartoes'); 
 
-    const cartoes = await carregarCartoes(); // Chama a função para obter os cartões
+    const cartoes = await buscarCartoes(); // Chama a função para obter os cartões
     // Limpa a seção de cartões antes de adicionar novos cartões (caso exista)
     sectionCartoes.innerHTML = ''; // Limpa o conteúdo existente
     console.log(cartoes);
@@ -84,17 +74,66 @@ export async function criarCartoes() {
         let img = document.createElement('img'); 
         img.src = cartoes[i].imagem; // Define a URL da imagem a partir do vetor de cartões
         img.alt = cartoes[i].nome; // Define o texto alternativo da imagem
-        img.style.width = '4v'; // Define a largura da imagem para ocupar 100% do cartão
+        img.style.width = '4vw'; // Define a largura da imagem para ocupar 100% do cartão
         img.style.height = '8vh'; // Mantém a proporção da imagem
         img.style.borderRadius= '1.7vh'; // Define a borda do cartão
+
+        let button = document.createElement('button');
+        button.textContent = 'EXCLUIR';
+        button.addEventListener('click', () => {
+            excluirCartao[i];
+        })
 
         // Adiciona os elementos h1, h3, p e img ao cartão
         cartao.appendChild(img); // Adiciona a imagem ao cartão
         cartao.appendChild(h1); 
         cartao.appendChild(h3); 
         cartao.appendChild(p); 
+        cartao.appendChild(button);  // Adiciona o botão ao cartão
 
         // Adiciona o cartão à seção de cartões
         sectionCartoes.appendChild(cartao); 
     }
+    let cartaoAdd = document.createElement('button');
+    cartaoAdd.className = 'cartaoAdd';
+    cartaoAdd.textContent = '+'; 
+    sectionCartoes.appendChild(cartaoAdd);
 }
+/* precisa de um código aqui */
+export async function excluirCartao(index) {
+    try {
+        const response = await fetch('http://localhost:3000/cartoes', {
+            method: 'DELETE',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify({ cartao: index }), // Converte o objeto JavaScript em uma string JSON (cartao)
+        });
+        criarCartoes();
+    } catch (e) {
+        console.log(e);
+    }
+}
+export async function cadastrarCartao() {
+    try {
+        const response = await fetch('http://localhost:3000/cartoes', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify({
+                nome: nome,
+                valor: valor,
+                img: link,
+             }), // Converte o objeto JavaScript em uma string JSON (cartao)
+        });
+        criarCartoes();
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+
+
+
+

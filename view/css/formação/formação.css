@@ -1,8 +1,9 @@
+@import url(./telaCadastro.css);
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 100vw; */
+    width: 100vw; 
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,12 +21,12 @@ body {
 }
 
 .cartao {
-    width: 80%;
-    height: 10vh;
+    width: 20vw;
+    height: 10.7vh;
     padding: 1%;
-    display: flex;
+    display:flex;
     flex-direction:row;
-    justify-content: space-around;
+    justify-content: space-between; 
     
     color:rgb(0, 140, 255);
     align-items:center;
@@ -46,3 +47,17 @@ h1, h3, p {
     margin: 0;
 }
 
+button {
+    border: 0;
+    border-radius: 0.7vw;
+    width: 10vh;
+    height: 3.6vh;
+    background: linear-gradient( rgb(0, 140, 255), rgb(114, 192, 255));
+    font-size: 100%;
+    color: aliceblue;
+    font-family:monospace;
+}
+
+button:hover {
+    background: linear-gradient( rgb(2, 113, 204), rgb(61, 125, 185));
+}
