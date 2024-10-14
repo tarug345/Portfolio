@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center; 
+    text-align: center;
     flex-wrap: wrap;
     border: 0;
     border-radius: 5vh;
@@ -16,12 +17,20 @@
     flex: 1; /*se acaso der errado, foi isso*/
     height: 50vh;
     width: 27vw;
+    background: linear-gradient( rgba(128, 198, 255, 0.555), rgba(70, 172, 255, 0.555));
+}
+#section-one {
+    transition: transform .7s ease;
+}
+#section-one:hover {
+    transform: translateY(-0.7vh);
 }
 #section-two {
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
     align-items: center; 
+    text-align: center;
     flex-wrap: wrap;
     align-content: flex-start;
     border:none;
@@ -33,7 +42,7 @@
     flex: 1; /*se acaso der errado, foi isso*/
     height: 50vh;
     width: 27vw;
-    background: linear-gradient( rgba(88,115,112), rgba(130,159,139));
+    background: linear-gradient( rgba(128, 198, 255, 0.555), rgba(70, 172, 255, 0.555));
 }
 #section-three {
     display: flex;
@@ -51,13 +60,14 @@
     flex: 1; /*se acaso der errado, foi isso*/
     height: 50vh;
     width: 27vw;
-    background: linear-gradient( rgba(88,115,112), rgba(130,159,139));
+    background: linear-gradient( rgba(128, 198, 255, 0.555), rgba(70, 172, 255, 0.555));
 }
 #p-section-one {
-    padding-left: 1vw;
+    text-align: center;
 }
 #p-section-two {
-    margin-left: 4vw;
+    text-align: center;
+    margin: 1vh;
 }
 #txt-section-three {
     font-size: 5vh;
@@ -82,7 +92,9 @@
     margin-right: 2vw;
     margin-left: 2vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #D9C6A2;
+    color: transparent;
+    -webkit-text-stroke: 0.08vh white; /* Adiciona contorno branco ao texto */
+   /*  text-stroke: 2px white; */ /* Suporte para navegadores que não usam o prefixo webkit */
 }
 #content-video {
     margin-left: 10%;

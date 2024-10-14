@@ -6,27 +6,12 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient( rgb(217,198,162), rgb(255, 249, 239));
+    /* background: linear-gradient( rgb(217,198,162), rgb(255, 249, 239)); */
+    background: url('https://preview.redd.it/5br86efyhc951.png?auto=webp&s=51feae191a15bb0623589661e4252e584ff66e8c') no-repeat;
+    background-size: cover;
     height: 100vh;
     width: 100vw;
     overflow: hidden; /*tira a barra de rolagem*/
-}
-
-button {
-    border: 0;
-    border-radius: 50vh;
-    width: 25vh;
-    height: 5vh;
-    background: linear-gradient( rgb(0, 0, 0), rgb(58, 58, 58));
-    font-size: 100%;
-    color: aliceblue;
-    font-family:monospace;
-
-    transition: all 0.2s ease-in-out;
-}
-button:hover {
-    background: linear-gradient(rgb(82, 82, 82), rgb(151, 151, 151));
-    width: 24vh;
 }
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -44,17 +29,7 @@ p {
   font-style: normal;
   color: aliceblue;
 }
-footer {
-    background-color: #587370;
-    width: 100%;
-    height: 5vh;
-    display: flex;
-    border: 0;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-}
+
 @media (max-width: 450px){
     html {
         margin: 0;
