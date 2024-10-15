@@ -23,10 +23,8 @@ header {
     height: 10vh;
     max-width: 100%;
     margin-left: 5vh;
+    
     transition: transform 5s ease-in-out;
-}
-#logo-img:hover {
-    transform: rotate(360deg);
 }
 #txt-logo {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -47,7 +45,7 @@ header {
     border: 0.1vh solid #80c6ff;
     border-radius: 1.7vh 0.5vw;
     width: 7.33vw;
-    height: 7.33vh;
+    height: 5.33vh;
     font-size: 100%;
     color: aliceblue;
     justify-content: space-evenly;
@@ -61,7 +59,7 @@ header {
     position: absolute;
     left: 0;
     bottom: -1vh;
-    width: 7.33vw;
+    width: 5.33vw;
     height: 0.1vh;
     background: rgb(138, 200, 255);
     border-radius: 5px;

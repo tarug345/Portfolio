@@ -1,27 +1,69 @@
-const baseUrl = 'http://localhost:3000/cartoes';
+import { criarCartoes } from "../../view/js/formacao/cartoes_view.js";
 
-export async function buscarCartoes() {
+export async function buscarCarotes() {
     try {
-        const response = await fetch(baseUrl); // Faz uma requisição HTTP para o servidor para obter os cartões
-        const data = await response.json(); // Converte a resposta em um objeto JavaScript
-        const cartoes = data.cartoes; // Armazena os cartões na variável cartoes
+        const response = await fetch('http://localhost:3000/cartoes');
+        const data = await response.json();
+        const cartoes = data.cartoes;
         return cartoes;
-    } catch (e) {
-        console.error('Erro ao buscar os cartões:', e);
+    }
+    catch (e) {
+        console.log(e);
     }
 }
 
-export async function excluirCartao(cartao) {
+export async function excluirCartoes(index) {
     try {
         const response = await fetch('http://localhost:3000/cartoes', {
             method: 'DELETE',
             headers: {
-                'Content-type': 'application/json',
-            }, 
-            body: JSON.stringify({ cartao: index }) // Converte o objeto JavaScript em uma string JSON (cartao)
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ cartao: index }),
+        });
+        criarCartoes();
+    }
+    catch (e) {
+        console.log(e);
+    }
+}
+
+export async function cadastrarCatao(nome, valor, link) {
+    try {
+        const response = await fetch('http://localhost:3000/cartoes', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                nome: nome,
+                valor: valor,
+                img: link,
+            }),
+        });
+        criarCartoes();
+    }
+    catch (e) {
+        console.log(e);
+    }
+}
+
+export async function atualizarCartao(id, nome, valor, img) {
+    try {
+        const response = await fetch('http://localhost:3000/cartoes', {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                nome: nome,
+                valor: valor,
+                img: img,
+                id: id,
+            }),
         });
         criarCartoes();
     } catch (e) {
-        console.error('Erro ao excluir o cartão:', e);
+        console.log(e);
     }
 }

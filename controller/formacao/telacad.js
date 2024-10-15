@@ -1,20 +1,22 @@
-let telaCad = document.getElementById('telaCadastro');
+import { cadastrarCatao } from "../../services/formacao/cartoes_services.js";
 
-export function esconderTelaCad() {
-    telaCad.style.display = '-100vw';
+let telaCad = document.getElementById('telaCadastro');
+export function escodeTelaCad(){
+    telaCad.style.left = '-100vw';
 }
-export function mostrarTelaCad() {
+export function mostraTelaCad(){
     telaCad.style.left = '0';
 }
-export function recolheDados() {
-    let nome = document.getElementsById('nome')[0].value;
-    let valor = document.getElementsById('valor')[1].value;
-    let link = document.getElementsById('link')[2].value;
- 
-    cadastrarCartao(nome.value, valor.value, link.value);
-    esconderTelaCad();
 
-    nome.value = '';
-    valor.value = '';
-    link.value = '';
+export function recolheDados(){
+       let nome = document.getElementById('nome'); 
+       let valor = document.getElementById('valor'); 
+       let link = document.getElementById('link'); 
+
+       cadastrarCatao(nome.value, valor.value, link.value);
+       escodeTelaCad();
+
+       nome.value = '';
+       valor.value = '';
+       link.value = '';
 }

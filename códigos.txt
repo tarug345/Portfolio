@@ -38,8 +38,9 @@
 //     }
     
 // ];
-import { buscarCartoes } from "./../services/cartoesServices.js";
-import { excluirCartao } from "./../services/cartoesServices.js";
+import { buscarCartoes } from "../../../controller/services/cartoesServices.js";
+import { excluirCartao } from "../../../controller/services/cartoesServices.js";
+import { mostrarCartao } from "../../../controller/formacao/telacad.js";
 // Função para criar os cartões
 export async function criarCartoes() {
     // Seleciona a seção onde os cartões serão inseridos
@@ -132,6 +133,26 @@ export async function cadastrarCartao() {
         console.log(e);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

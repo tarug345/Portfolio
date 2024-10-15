@@ -43,6 +43,11 @@
     height: 50vh;
     width: 27vw;
     background: linear-gradient( rgba(128, 198, 255, 0.555), rgba(70, 172, 255, 0.555));
+
+    transition: transform .7s ease;
+}
+#section-two:hover {
+    transform: translateY(-0.7vh);
 }
 #section-three {
     display: flex;
@@ -61,6 +66,10 @@
     height: 50vh;
     width: 27vw;
     background: linear-gradient( rgba(128, 198, 255, 0.555), rgba(70, 172, 255, 0.555));
+    transition: transform .7s ease;
+}
+#section-three:hover {
+    transform: translateY(-0.7vh);
 }
 #p-section-one {
     text-align: center;
