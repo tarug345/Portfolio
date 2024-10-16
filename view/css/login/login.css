@@ -12,7 +12,7 @@ body {
     align-items:center ;
     justify-content: center; /* Centraliza horizontalmente os itens dentro do corpo */
     min-height: 100vh; /* Define a altura mínima do corpo para 100% da altura da janela de visualização */
-    background: url('https://wallpapercat.com/w/full/a/c/d/210638-3840x2160-desktop-4k-travis-scott-background-photo.jpg') no-repeat;/*  /* Define uma imagem de fundo (comentada) */
+    background: url('https://i.redd.it/meo87mmxx5fb1.jpg') no-repeat;/*  /* Define uma imagem de fundo (comentada) */
 
     background-size: cover; /* Faz a imagem de fundo cobrir toda a área do corpo (comentada) */
     background-position: center; /* Centraliza a imagem de fundo (comentada) */
@@ -101,10 +101,16 @@ body::before {
 
 .form-box h2 {
     font-size: 2em; /* Define o tamanho da fonte do cabeçalho */
-    color: #aedcff; /* Define a cor do cabeçalho */
+    color: #e2f3ff; /* Define a cor do cabeçalho */
     text-align: center; /* Centraliza o texto do cabeçalho */
 }
-
+.form-box.register{
+    display: none;
+} 
+.form-box-register h2 {
+    font-size: 2em; /* Define o tamanho da fonte do cabeçalho */
+    color: #aedcff; /* Define a cor do cabeçalho */     
+}
 .input-box {
     position: relative; /* Define a posição da caixa de entrada como relativa */
     width: 100%; /* Define a largura da caixa de entrada para 100% do contêiner pai */
