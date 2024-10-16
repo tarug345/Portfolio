@@ -39,8 +39,8 @@
     margin-block: 5vh;
     margin-left: 5vh;
     margin-right: 5vh;
-    flex: 1; /*se acaso der errado, foi isso*/
-    height: 50vh;
+    /* flex: 1; */ /*se acaso der errado, foi isso*/
+    height: 17.5vh;
     width: 27vw;
     background: linear-gradient( rgba(128, 198, 255, 0.555), rgba(70, 172, 255, 0.555));
 
@@ -59,11 +59,11 @@
     border:none;
     border-radius: 5vh;
     padding-block: 5vh;
-    margin-block: 5vh;
+    /* margin-block: 5vh; */
     margin-left: 5vh;
     margin-right: 5vh;
-    flex: 1; /*se acaso der errado, foi isso*/
-    height: 50vh;
+    /* flex: 1; */ /*se acaso der errado, foi isso*/
+    height: 17.5vh;
     width: 27vw;
     background: linear-gradient( rgba(128, 198, 255, 0.555), rgba(70, 172, 255, 0.555));
     transition: transform .7s ease;
@@ -73,10 +73,6 @@
 }
 #p-section-one {
     text-align: center;
-}
-#p-section-two {
-    text-align: center;
-    margin: 1vh;
 }
 #txt-section-three {
     font-size: 5vh;
@@ -112,7 +108,13 @@
     box-shadow: 10px 5px 5px rgba(56, 56, 56, 0.575);
 }
 
-
+#displaySections {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100vw;
+    height: 100vh;
+}
 
 
 
