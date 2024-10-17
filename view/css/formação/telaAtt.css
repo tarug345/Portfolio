@@ -1,10 +1,10 @@
-#telaAtt {
+#telaCadastro {
     width: 100%;
     height: 100%;
 
     position: fixed;
     top: 0;
-    right: -100vw;
+    left: -100vw;
 
     background-color: rgba(0, 0, 0, 0.2);
     
@@ -15,7 +15,7 @@
     transition: all 0.2s ease-in-out;
 }
 
-#inputs_att {
+#inputs-cad {
     width: 30vw;
     height: 50vh;
 
@@ -30,7 +30,7 @@
     padding: 5vh 0;
 }
 
-#buttons_telaatt {
+#buttons-telacad {
     width: 15vw;
     display: flex;
     justify-content: space-between;

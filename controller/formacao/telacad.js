@@ -1,4 +1,4 @@
-import { cadastrarCatao } from "../../services/formacao/cartoes_services.js";
+import { cadastrarCatao } from "./../services/formacao/cartoesServices.js";
 
 let telaCad = document.getElementById('telaCadastro');
 export function escodeTelaCad(){
