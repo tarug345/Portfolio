@@ -6,12 +6,30 @@
     <title>Ping Pong</title>
     <link rel="stylesheet" href="./../css/pingpong/pinpong.css">
     <script src="https://kit.fontawesome.com/98914b98a5.js" crossorigin="anonymous"></script>
+    <script type="module" src="./../../controller/pingpong/pingPong.js" defer></script>
 </head>
 <body id="body">
-
-    
-    <div id="pingpong"></div>
-    <div id="bola"></div>
-    <div id="pingpong2"></div>
+    <header>
+        <div class="logo">
+            <img id="logo-img"src="https://www.pngarts.com/files/5/Travis-Scott-Transparent-Image.png" alt="logo">
+            <h1 id="txt-logo">Travis Scott</h1>
+        </div>
+        <div class="header-btn">
+            <button class="h-btn" onclick="window.location.href='./produtos.html'">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="h-btn">
+                <i class="fa-brands fa-instagram"></i>
+            </button>
+            <button class="h-btn">
+                <i class="fa-brands fa-github"></i>
+            </button>
+        </div>
+    </header>
+    <div id="gameArea">
+        <div id="raqueteUm"></div>
+        <div id="bola"></div>
+        <div id="raqueteDois"></div>
+    </div>
 </body>
 </html>

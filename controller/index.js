@@ -8,5 +8,5 @@ document.getElementById('section-two').addEventListener('click', function() {
 });
 document.getElementById('section-three').addEventListener('click', function() {
     // Redireciona para o site desejado
-    window.location.href = 'https://g.co/kgs/EBNhjw3'; // Altere para o URL que deseja
+    window.location.href = './../view/pages/pingpong.html'; // Altere para o URL que deseja
 });
