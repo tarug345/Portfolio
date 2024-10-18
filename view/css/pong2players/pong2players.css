@@ -1,4 +1,4 @@
-#body {
+body {
     width: 100vw;
     height: 100vh;
     bottom: 0;
@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: url('https://live.staticflickr.com/1860/43195298665_f6d10be226_h.jpg') no-repeat center center fixed;
+    background: url('https://i.redd.it/meo87mmxx5fb1.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -17,15 +17,43 @@
     color: aliceblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-header {
+body header {
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
+    border-bottom: 0.1vh solid aliceblue;
     display: flex;
-    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
     top: 0;
+    bottom: 0;
 }
-header button {
-    width: 100vw;
-    height: 15vh;
-    align-items: end;
+header #onePlayer {
+    width: 7.33vw;
+    height: 5vh;
+    background-color: transparent;
+    color: aliceblue;
+    border: 0.1vh solid aliceblue;
+    border-radius: 2vh;
+    transition: transform .2s ease;
+}
+header #onePlayer:hover {
+    background: linear-gradient( rgb(25, 85, 134), rgb(13, 33, 59));
+    border: none;
+    transform: translateY(-0.2vh);
+}
+button {
+    margin-left: 0.9vw;
+    width: 7.33vw;
+    height: 5vh;
+    background-color: transparent;
+    color: aliceblue;
+    border: 0.1vh solid aliceblue;
+    border-radius: 2vh;
+    transition: transform .2s ease;
+}
+button:hover {
+    background: linear-gradient( rgb(25, 85, 134), rgb(13, 33, 59));
+    border: none;
+    transform: translateY(-0.2vh);
 }

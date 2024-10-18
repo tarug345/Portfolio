@@ -47,3 +47,20 @@ if (nota>7){
 } else if ((nota>5)&&(nota<7)) {
     recuperação
 }
+
+18/10
+
+cartoes: trazer imagens do backend
+banners (trazer p/ index.html)
+pingpong botoes (link entre uma pagina ou outra)
+login (
+    estilização do Registration
+    .js do login
+    backend.js do login
+    segurança 
+)
+tratameto de erros (
+    cartoes
+    login
+)
+revisão na estilização de todos as pages e css
