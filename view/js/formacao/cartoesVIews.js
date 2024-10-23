@@ -18,8 +18,6 @@ export async function criarCartoes() {
         h3.textContent = cartoes[i].valor;
         let imgTag = document.createElement('img');
         imgTag.src = cartoes[i].img;
-        imgTag.style.width = '30vh';
-        imgTag.style.height = '30vh';
 
         let div = document.createElement('div');
         div.style.display = 'flex';
