@@ -14,6 +14,7 @@
     transition: .2s ease-in-out;
 }
 .banner {
+
     width: 30vw;
     height: 60.5vh;
     margin: 0 5vw;
@@ -22,15 +23,20 @@
     border-radius: 2vw;
 }
 #idBannerUm{
+    margin-left: 65vw;
     background-color: aliceblue;
 }
-#idBannerDois{   
+#idBannerDois{
+    margin-left: 55vw;
     background-color: aqua;
 }
 #idBannerTres{
+    margin-left: 55vw;  
+    /* margin-right: 20vw; */
     background-color: black;
 }
 #idBannerQuatro{
+    margin-left: 55vw;
     background-color: #0088ff;
 }
 #btnBanners {
