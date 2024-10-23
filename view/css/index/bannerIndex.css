@@ -3,7 +3,7 @@
     margin-top: 5vh;
     gap: 10vw;
     width: 400vw;
-    height: 35vh;
+    height: 0;
     
     left: 0;
 
@@ -14,7 +14,6 @@
     transition: .2s ease-in-out;
 }
 .banner {
-
     width: 30vw;
     height: 60.5vh;
     margin: 0 5vw;
@@ -24,20 +23,26 @@
 }
 #idBannerUm{
     margin-left: 65vw;
-    background-color: aliceblue;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-8De9Lq1fG9OR2QFSARn5N8CK8gVdeQ_5A&s') no-repeat center;
+    background-size: 30vw 60.5vh;
 }
 #idBannerDois{
     margin-left: 55vw;
-    background-color: aqua;
+    background: url('https://preview.redd.it/anyone-got-that-pic-of-travis-meme-with-the-incredible-v0-y33926adc1jb1.jpeg?width=1170&format=pjpg&auto=webp&s=5d13707c231332a585d406eb69cb6c0a7d214eff') 
+    no-repeat center;
+    background-size: 30vw 60.5vh;
 }
 #idBannerTres{
     margin-left: 55vw;  
-    /* margin-right: 20vw; */
-    background-color: black;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjy6CnOz_6O3o0H-ZA-b6YmT1QYAxyMkDOZw&s') 
+    no-repeat center;
+    background-size: 30vw 60.5vh;
 }
 #idBannerQuatro{
     margin-left: 55vw;
-    background-color: #0088ff;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4yxRcya8uhSlcEqCP6JBgmDA06qg6abJ5IA&s') 
+    no-repeat center;
+    background-size: 30vw 60.5vh;
 }
 #btnBanners {
     width: 10vw;
@@ -55,9 +60,9 @@
 .btnBanner {
     width: 3vh;
     height: 3vh;
-    border-radius: 50%;
-    background-color: rgb(255, 0, 0);
-    border: none;
+    border-radius: 50%; 
+    background-color: transparent;
+    border: 0.1vh solid black;  
     transition: all .3s ease;
 }
 .btnBanner:hover {
