@@ -1,12 +1,12 @@
+
 #navBanners {
     margin-top: 5vh;
     gap: 10vw;
     width: 400vw;
     height: 35vh;
-    display: inline;
+    
     left: 0;
 
-    top: 10.8vh;
     position: absolute;
     
     display: flex;
@@ -14,7 +14,7 @@
     transition: .2s ease-in-out;
 }
 .banner {
-    width: 55vw;
+    width: 30vw;
     height: 60.5vh;
     margin: 0 5vw;
     background-color: red;
@@ -22,23 +22,15 @@
     border-radius: 2vw;
 }
 #idBannerUm{
-    margin-left: 65vw;
     background-color: aliceblue;
 }
-#idBannerDois{
-    
-    margin-left: 65vw;
-
+#idBannerDois{   
     background-color: aqua;
 }
 #idBannerTres{
-    margin-left: 65vw;
-    
     background-color: black;
 }
 #idBannerQuatro{
-    margin-left: 65vw;
-
     background-color: #0088ff;
 }
 #btnBanners {
