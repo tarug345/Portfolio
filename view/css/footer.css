@@ -2,7 +2,7 @@ footer {
     /* background-color: #587370; */
     background: linear-gradient( rgba(128, 198, 255, 0.555), rgba(70, 172, 255, 0.555));
     width: 100%;
-    height: 0vh;
+    height: 5vh;
     display: flex;
     border: 0;
     justify-content: center;
