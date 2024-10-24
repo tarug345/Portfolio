@@ -12,3 +12,8 @@ document.getElementById('section-three').addEventListener('click', function() {
 });
 
 // Seção de Projetos
+let banners = document.getElementById('navBanners');
+export function trocarBanner(numeroBanner) {
+    banners.style.left = '-' + numeroBanner *100 + 'vw';
+}
+window.trocarBanner = trocarBanner; 

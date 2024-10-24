@@ -1,46 +1,44 @@
 #navBanners {
     margin-top: 5vh;
-    /* gap: 10vw; */
-    width: 100vw;
+    gap: 10vw;
+    width: 400vw;
     height: 35vh;
-    
-    margin-left: 65vw;
+    display: inline;
+    left: 0;
 
     top: 16.3vh;
     position: absolute;
     
     display: flex;
-    justify-content: space-evenly;
-    
+    flex-direction: row;
     transition: .2s ease;
 }
 .banner {
     width: 90vw;
     height: 35vh;
-    margin: 0 1vw;
+    margin: 0 5vw;
     background-color: red;
     border: 0;
     border-radius: 2vw;
 }
 #idBannerUm{
-    width: 65vw;
-    margin-right: 20vw;
+    width: 100vw;
     height: 59.9vh;
     background-color: aliceblue;
 }
 #idBannerDois{
-    width: 30vw;
+    width: 100vw;
     height: 59.9vh;
     background-color: aqua;
 }
 #idBannerTres{
     
-    width: 30vw;
+    width: 100vw;
     height: 59.9vh;
     background-color: black;
 }
 #idBannerQuatro{
-    width: 30vw;
+    width: 100vw;
     height: 59.9vh;
     background-color: #0088ff;
 }
@@ -49,7 +47,7 @@
     height: 5vh;
 
     position: absolute;
-    left: 76.5vw;
+    left: 75vw;
     top: 75vh;
     
     display: flex;
