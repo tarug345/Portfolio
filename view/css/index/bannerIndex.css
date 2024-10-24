@@ -62,7 +62,7 @@
     height: 3vh;
     border-radius: 50%; 
     background-color: transparent;
-    border: 0.1vh solid black;  
+    border: 0.3vh solid black;  
     transition: all .3s ease;
 }
 .btnBanner:hover {
