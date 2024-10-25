@@ -64,7 +64,6 @@ body {
     border-radius: 2vh;
     color: black;
     cursor: pointer;
-
     transition: .2s ease-in-out;
     box-shadow: 0.1vw 0.1vw 0.1vw rgba(33, 33, 33, 0.3);
 }
