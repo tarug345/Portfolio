@@ -2,7 +2,7 @@ import { criarCartoes } from "./../../../view/js/formacao/cartoesViews.js";
 
 export async function buscarCarotes() {
     try {
-        const response = await fetch('http://localhost:3000/cartoes');
+        const response = await fetch('https://back-end-xi-rosy.vercel.app/');
         const data = await response.json();
         return data;
     }
@@ -13,7 +13,7 @@ export async function buscarCarotes() {
 
 export async function excluirCartoes(index) {
     try {
-        const response = await fetch('http://localhost:3000/cartoes', {
+        const response = await fetch('https://back-end-xi-rosy.vercel.app/cartoes', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ export async function excluirCartoes(index) {
 
 export async function cadastrarCatao(nome, valor, link) {
     try {
-        const response = await fetch('http://localhost:3000/cartoes', {
+        const response = await fetch('https://back-end-xi-rosy.vercel.app/cartoes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ export async function cadastrarCatao(nome, valor, link) {
 
 export async function atualizarCartao(id, nome, valor, img) {
     try {
-        const response = await fetch('http://localhost:3000/cartoes', {
+        const response = await fetch('https://back-end-xi-rosy.vercel.app/cartoes', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

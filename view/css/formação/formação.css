@@ -4,6 +4,7 @@ body {
     background: url('https://images6.alphacoders.com/136/thumb-1920-1369564.jpeg') 
     no-repeat center;
     background-size: cover;
+    overflow-x: hidden;
 }
 #cartoes{
     width: 100vw;
