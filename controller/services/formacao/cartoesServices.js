@@ -2,23 +2,24 @@ import { criarCartoes } from "./../../../view/js/formacao/cartoesViews.js";
 
 export async function buscarCarotes() {
     try {
-        const response = await fetch('https://back-end-xi-rosy.vercel.app/');
+        const response = await fetch('https://back-end-xi-rosy.vercel.app/cartoes');
         const data = await response.json();
-        return data;
+        const cartoes = data.cartoes;
+        return cartoes;
     }
     catch (e) {
         console.log(e);
     }
 }
 
-export async function excluirCartoes(index) {
+export async function excluirCartoes(cartao) {
     try {
         const response = await fetch('https://back-end-xi-rosy.vercel.app/cartoes', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ cartao: index }),
+            body: JSON.stringify({ cartao }),
         });
         criarCartoes();
     }

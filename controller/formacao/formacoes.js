@@ -11,4 +11,5 @@ window.recolheDadosAtt = recolheDadosAtt;
 
 document.addEventListener("DOMContentLoaded", ()=>{
     criarCartoes();
+
 });
